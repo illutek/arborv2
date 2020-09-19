@@ -1,0 +1,30 @@
+// /////////////////////////
+// @@ VARIABLES
+// ////////////////////////
+
+// COLORS
+$colors: (
+  accent: rgb(0, 154, 60),
+  accent-two: rgb(199, 212, 1),
+  bcg-clr: rgb(234, 224, 212),
+  gray: rgb(225, 230, 225),
+  dark-gray: rgb(143, 148, 145),
+  black: rgb(33, 33, 33),
+  white: rgb(255, 255, 255)
+);
+
+
+// FONTS VARIABLES
+$ff-sans: 'Open Sans', sans-serif;
+$ff-titles: 'Rubik', sans-serif;
+$fw-bold: 800;
+$ff-size: 1.6rem;
+
+// LAYOUT VARIABLES
+$default-padding: 2.5em;
+$double-padding: $default-padding * 2;
+$margin-b: 3rem;
+$margin-bb: $margin-b * 2;
+
+// OTHER
+$trans-speed: .3s;
