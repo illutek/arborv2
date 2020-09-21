@@ -1,0 +1,16 @@
+// /////////////////////////
+// @@ REGION HEADER TOP
+// ////////////////////////
+
+.r-header {
+  &__top {
+      background-color: map-get($colors, accent);
+      height: 5rem;
+  }
+
+  &__top-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
