@@ -25,7 +25,7 @@ h3 {
 
 h1 {
   font: {
-    size: 12vw;
+    size: 10vw;
   }
 
   @include mq(tablet) {
@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   font: {
-    size: 5.2em;
+    size: 10vw;
   }
 
   @include mq(tablet) {

@@ -17,7 +17,12 @@
     <header>
         <div class="r-header__top">
             <div class="container r-header__top-inner">
-                <div class="r-header__menu">MENU</div>
+                <div class="r-header__menu">
+                    <div class="c-hamburger-btn">
+                        <span class="c-hamburger-btn--open">&nbsp;</span>
+                        <span class="c-hamburger-btn__label"> Menu</span>
+                    </div>
+                </div>
                 <div class="r-header__contact">CONTACT</div>
             </div>
         </div>
@@ -63,11 +68,30 @@
 
         <footer class="r-footer">
             <div class="container r-footer__inner">
-
+                <div class="footer__contact">
+                    Contact gegevens
+                </div>
+                <div class="footer__copy">
+                    Copyrights
+                </div>
             </div>
         </footer>
     </div>
 
+    <div class="cookie__alert" role="alert">
+        <p>We gebruiken cookies om ervoor te zorgen dat u de beste ervaring op onze website krijgt. </p>
+    
+        <div class="cookie__flex">
+            <a href="{{ base_path }}privacyverklaring">Lees meer</a>
+    
+            <button type="button" class="c-btn c-btn--accent-two cookie__accept">
+                Akkoord
+            </button>
+    
+        </div>
+    </div>
+
 </body>
 
+<script src="../dist/js/all.js"></script>
 </html>

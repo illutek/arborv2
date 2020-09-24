@@ -1,0 +1,28 @@
+// /////////////////////////
+// @@ HEADER BRANDING
+// ////////////////////////
+
+.r-header {
+
+  &__branding {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-color: map-get($colors, accent-two);
+    padding: 2rem 0;
+    margin-bottom: $margin-b;
+  }
+
+}
+
+.r-branding {
+
+  &__title {
+    color: map-get($colors, accent);
+    text-align: center;;
+  }
+
+  &__slogan {
+    text-align: center;
+  }
+}
