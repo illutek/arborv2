@@ -6,7 +6,7 @@
   right: -100vw;
   padding: $default-padding;
 
-  @include bcg-overlay(map-get($colors, accent-two), map-get($colors, white));
+  @include bcg-overlay(map-get($colors, accent-two), map-get($colors, black));
 
   @include mq(tablet) {
     width: 80vw;
@@ -42,8 +42,8 @@
 
   &__item {
     font: {
-      size: 2.7rem;
-      weight: $fw-bold;
+      size: 2.4rem;
+      weight: $fw-light;
     }
     margin-left: 0;
     justify-self: center;
@@ -51,7 +51,7 @@
 
   &__link {
     text-decoration: none;
-    color: map-get($colors, bcg-clr);
+    color: map-get($colors, black);
   }
 
   &__bottom {

@@ -1,0 +1,20 @@
+// //////////////////////////////
+// @@ BRANDING-OVERLAY
+// //////////////////////////////
+
+.c-overlay-branding {
+	display: flex;
+	justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: $margin-b;
+
+	&__title {
+		font: {
+			size: 3rem;
+		}
+	}
+
+	&__logo {
+		width: 10rem;
+	}
+}

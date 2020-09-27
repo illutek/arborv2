@@ -8,13 +8,6 @@
 
 	@include bcg-overlay(map-get($colors, accent), map-get($colors, black));
 
-	&__inner {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
 	&__top {
 		display: flex;
 		justify-content: space-between;
@@ -30,11 +23,13 @@
 	&__body {
 		display: flex;
 		flex-direction: column;
-        align-items: center;
+				align-items: center;
+		
+		color: map-get($colors, white);
     
 		font: {
 			size: $ff-size + .2rem;
-			weight: $fw-bold;
+			weight: $fw-light;
     }
     
     p {
