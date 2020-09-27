@@ -1,0 +1,12 @@
+// //////////////////////////////
+// @@ REGION FOOTER
+// //////////////////////////////
+
+.r-footer {
+  background-color: map-get($colors, accent-two);
+  padding: 2rem 0;
+
+  &__contact {
+    text-align: center;
+  }
+}

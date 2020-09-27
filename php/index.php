@@ -21,6 +21,12 @@
       </main>
 
       <?php echo file_get_contents("../html/footer.html"); ?>
+        <div class="r-footer__copy">
+          Copyright <?php echo date('Y'); ?>
+        </div>
+        </div>
+      </footer>
+      
         
     </div>
 
