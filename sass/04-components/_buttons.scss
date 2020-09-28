@@ -13,7 +13,11 @@
     &--accent-two {
         background-color: map-get($colors, accent-two);
         color: map-get($colors, black);
+    }
 
+    &--accent {
+        background-color: map-get($colors, accent);
+        color: map-get($colors, black);
     }
 
     &:hover {

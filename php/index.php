@@ -1,15 +1,14 @@
 <?php echo file_get_contents("../html/head.html"); ?>
 
 <body>
-    
-<?php echo file_get_contents("../html/menu-overlay.html"); ?>
 
-<?php echo file_get_contents("../html/contact-overlay.html"); ?>
+  <?php echo file_get_contents("../html/menu-overlay.html"); ?>
+
+  <?php echo file_get_contents("../html/contact-overlay.html"); ?>
 
   <div class="r-parent-container">
 
     <?php echo file_get_contents("../html/header.html"); ?>
-    
 
     <div class="r-parent-main">
       <main>
@@ -21,17 +20,17 @@
       </main>
 
       <?php echo file_get_contents("../html/footer.html"); ?>
-        <div class="r-footer__copy">
-          Copyright <?php echo date('Y'); ?>
-        </div>
-        </div>
       </footer>
-      
-        
+    </div>
+
+    <div class="r-footer__copy">
+      © <?php echo date('Y'); ?> | ARBOR SERVICE
     </div>
 
   </div>
- 
+
+  </div>
+
   <?php echo file_get_contents("../html/cookie-alert.html"); ?>
 
 </body>

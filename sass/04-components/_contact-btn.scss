@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
 
-    @include mq(tablet) {
+    @include mq(desktop) {
         width: 0;
     }
 }

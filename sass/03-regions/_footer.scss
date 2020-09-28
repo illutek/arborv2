@@ -9,4 +9,13 @@
   &__contact {
     text-align: center;
   }
+
+  &__copy {
+    background-color: map-get($colors, accent-two);
+    border-top: 1px solid map-get($colors, white);
+    padding: 1.5rem 3rem;
+    font: {
+      size: 1rem;
+    };
+  }
 }
