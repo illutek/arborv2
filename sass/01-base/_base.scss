@@ -28,6 +28,10 @@ p {
 }
 
 a {
+  text-decoration: none;
+	color: map-get($colors, accent);
+	
+
 	&:hover {
 		text-decoration: none;
 	}
