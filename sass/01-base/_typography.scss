@@ -28,8 +28,8 @@ h1 {
     size: 10vw;
   }
 
-  @include mq(tablet) {
-    font-size: 7vw;
+  @include mq(desktop) {
+    font-size: 4.5vw;
   }
 }
 
@@ -62,7 +62,7 @@ strong {
 }
 
 .heading-one {
-  color: map-get($colors, accent-two);
+  color: map-get($colors, white);
 }
 
 .heading-two {

@@ -6,22 +6,23 @@
 
   <?php echo file_get_contents("../html/contact-overlay.html"); ?>
 
-  <div class="r-parent-container">
+  <div class="r-grid-container">
 
     <?php echo file_get_contents("../html/header.html"); ?>
 
-    <div class="r-parent-main">
-      <main>
-        <div class="r-content">
-          <div class="container">
-            <?php echo file_get_contents("../html/content/home.html"); ?>
-          </div>
+    <div class="r-main">
+
+      <div class="r-content">
+        <div class="container">
+          <?php echo file_get_contents("../html/content/home.html"); ?>
         </div>
-      </main>
+      </div>
 
       <?php echo file_get_contents("../html/footer.html"); ?>
       </footer>
     </div>
+
+
 
     <div class="r-footer__copy">
       © <?php echo date('Y'); ?> | ARBOR SERVICE

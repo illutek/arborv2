@@ -6,6 +6,11 @@
   background-color: map-get($colors, accent-two);
   padding: 2rem 0;
 
+  @include mq(desktop) {
+    background-color: transparent;
+    border: 1px solid map-get($colors, accent-two);
+  }
+
   &__contact {
     text-align: center;
   }
@@ -17,5 +22,15 @@
     font: {
       size: 1rem;
     };
+
+    @include mq(desktop) {
+      border-top: none;
+      grid-area: copy;
+      z-index: 99;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 50%;
+    }
   }
 }

@@ -1,10 +1,17 @@
 // //////////////////////////////
-// @@ REGION MAIN-CONTENT
+// @@ REGION CONTENT
 // //////////////////////////////
 
 .r-content {
 
   img {
     margin-bottom: $margin-b;
+
+    @include mq(desktop) {
+      width: 25%;
+      float: left;
+      margin-right: 1.5rem;
+    }
   }
+
 }

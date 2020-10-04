@@ -1,0 +1,13 @@
+// //////////////////////////////
+// @@ REGION Main
+// //////////////////////////////
+
+// On desktop view the right region
+
+.r-main {
+
+  @include mq(desktop) {
+    grid-area: main;
+    width: 50vw;
+  }
+}

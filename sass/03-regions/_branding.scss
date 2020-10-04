@@ -4,13 +4,21 @@
 
 .r-header {
 
+  @include mq(desktop) {
+    
+  }
+
   &__branding {
     margin-bottom: $margin-b;
 
     @include mq(desktop) {
       position: fixed;
-      min-height: 100vh;
-      background-image: url("../images/logo_accent-two-clr.png");
+      min-height: 100%;
+      width: 50vw;
+      background-image: url("../images/left-image_smaller.jpg");
+      background-size: cover;
+
+      grid-area: branding;
     }
   }
 
@@ -28,11 +36,21 @@
     text-align: center;
 
     @include mq(desktop) {
-      
+      background-image: url("../images/logo_accent-two-clr.png");
+      background-position: 90%;
+      background-color: transparent;
+      color: map-get($colors, white);
+      text-align: left;
+      margin-top: 6rem;
     }
   }
 
   &__slogan {
-    text-align: center;
+    display: inline-block;
+
+    @include mq(desktop) {
+      background-color: map-get($colors, accent-two);
+      padding: 1rem 2rem;
+    }
   }
 }
