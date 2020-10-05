@@ -9,7 +9,7 @@
   @include bcg-overlay(map-get($colors, accent-two), map-get($colors, black));
 
   @include mq(tablet) {
-    width: 80vw;
+    width: 50vw;
   }
   
   &__top {
@@ -32,12 +32,6 @@
   &__items {
       list-style-type: none;
 
-      // @include mq(desktop) {
-      //   display: grid;
-      //   grid-template-columns: repeat(2, 1fr);
-      //   gap: 2rem;
-        
-      // }
   }
 
   &__item {
@@ -52,6 +46,10 @@
   &__link {
     text-decoration: none;
     color: map-get($colors, black);
+  }
+
+  &__active {
+    color: map-get($colors, white);
   }
 
   &__bottom {

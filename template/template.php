@@ -31,25 +31,10 @@
 
 
 		<div class="r-menu-overlay__list">
-			<div class="">
-				<ul class="r-menu-overlay__items">
-					<li class="r-menu-overlay__item">
-						<a class="r-menu-overlay__link" href="index.php">Home</a></li>
-					<li class="r-menu-overlay__item">
-						<a class="r-menu-overlay__link" href="#">Bedrijven</a></li>
-					<li class="r-menu-overlay__item">
-						<a class="r-menu-overlay__link" href="#">Tuinwerken</a></li>
-					<li class="r-menu-overlay__item">
-						<a class="r-menu-overlay__link" href="#">Boomverzorging</a>
-						<ul class="r-menu-overlay__items">
-							<li>
-								<a class="r-menu-overlay__link" href="#">Aanplanten van bomen of leibomen</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+			<ul class="r-menu-overlay__items">
+				<?php nav_menu(); ?>
 		</div>
+
 	</div>
 
 	<div class="r-contact-overlay">
