@@ -53,6 +53,23 @@ function nav_menu($sep = ' | ')
     echo trim($nav_menu, $sep);
 }
 
+function tree_menu($sep = ' | ')
+{
+    $tree_menu = '';
+    $tree_items = config('tree_menu');
+    
+    foreach ($tree_items as $uri => $name) {
+        $query_string = str_replace('page=', '', $_SERVER['QUERY_STRING'] ?? '');
+        $class = $query_string == $uri ? ' r-menu-overlay__active' : '';
+        $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
+        
+        // Add nav item to list. See the dot in front of equal sign (.=)
+        $tree_menu .= "<li class='r-menu-overlay__item r-menu-overlay__item--indent'>" . '<a href="' . $url . '" title="' . $name . '" class="r-menu-overlay__link ' . $class . '">' . $name . '</a>' . "<li></li>";
+    }
+
+    echo trim($tree_menu, $sep);
+}
+
 /**
  * Displays page title. It takes the data from
  * URL, it replaces the hyphens with spaces and

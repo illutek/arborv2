@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Rubik:wght@900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?php site_url(); ?>/dist/css/styles.css">
+	<link rel="icon" type="image/x-icon" href="<?php site_url(); ?>/favicon.ico" />
 	<title><?php page_title(); ?> | <?php site_name(); ?></title>
 </head>
 
@@ -29,13 +30,20 @@
 
 		</div>
 
-
 		<div class="r-menu-overlay__list">
 			<ul class="r-menu-overlay__items">
 				<?php nav_menu(); ?>
+			</ul>
+			<ul class="r-menu-overlay__items">
+				<li class="r-menu-overlay__item r-menu-overlay__item--sub">
+					Boomverzorging
+				</li>
+				<?php tree_menu(); ?>
+			</ul>
+				
 		</div>
 
-	</div>
+	</div><!-- end of r-menu-overlay -->
 
 	<div class="r-contact-overlay">
 		<div class="r-contact-overlay__inner">
@@ -47,7 +55,7 @@
 			</div>
 
 			<div class="c-overlay-branding">
-				<div class="c-overlay-branding__title">Arbor service</div>
+				<div class="c-overlay-branding__title"><?php site_name(); ?></div>
 				<div class="c-overlay-branding__logo">
 					<a class="c-overlay-branding__link" href="index.php">
 						<img src="../dist/images/logo_accent-two-clr.png" alt="">
@@ -76,11 +84,12 @@
 			</div>
 
 		</div>
-	</div>
+	</div><!-- end of r-contact-overlay -->
 
 	<div class="r-grid-container">
 
 		<header class="r-header">
+
 			<div class="r-header__top">
 				<div class="container r-header__top-inner">
 					<div class="r-header__menu">
@@ -95,7 +104,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div><!-- end of r-header-top -->
 
 			<div class="r-header__branding">
 
@@ -107,10 +116,9 @@
 							<span><?php site_slogan(); ?></span>
 						</div>
 					</div>
-
 				</div>
 
-			</div>
+			</div><!-- end of r-header__branding -->
 		</header>
 
 		<div class="r-main">
@@ -128,29 +136,26 @@
 						<a class="c-btn c-btn--accent" href="tel:+32491550999">+32491550999</a>
 					</div>
 			</footer>
-		</div>
 
-
+		</div><!-- end of r-main -->
 
 		<div class="r-footer__copy">
 			© <?php echo date('Y'); ?> | <?php site_name(); ?>
 		</div>
 
-	</div>
-
-	</div>
+	</div><!-- end of grid-container -->
 
 	<div class="cookie__alert" role="alert">
 		<p>We gebruiken cookies om ervoor te zorgen dat u de beste ervaring op onze website krijgt. </p>
 
 		<div class="cookie__flex">
 			<a href="#">Lees meer</a>
-
 			<button type="button" class="c-btn c-btn--accent-two cookie__accept">
 				Akkoord
 			</button>
 		</div>
-	</div>
+
+	</div><!-- end of cookie__alert -->
 
 </body>
 

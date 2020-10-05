@@ -26,6 +26,7 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     margin-bottom: $margin-b;
   }
 
@@ -41,6 +42,18 @@
     }
     margin-left: 0;
     justify-self: center;
+
+    &--sub {
+      &::after {
+        content: url(../images/triangle.png);
+        background-color: transparent;
+      }
+    
+    }
+    &--indent {
+      padding-left: 2rem;
+    }
+    
   }
 
   &__link {

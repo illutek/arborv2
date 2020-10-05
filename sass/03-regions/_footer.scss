@@ -8,11 +8,17 @@
 
   @include mq(desktop) {
     background-color: transparent;
-    border: 1px solid map-get($colors, accent-two);
+    
   }
 
   &__contact {
     text-align: center;
+
+    @include mq(desktop) {
+      padding: 2rem;
+      text-align: left;
+      border: 1px solid map-get($colors, accent-two);
+    }
   }
 
   &__copy {

@@ -16,11 +16,14 @@ function config($key = '')
             '' => 'Home',
             'bedrijven' => 'Bedrijven',
             'tuinwerken' => 'Tuinwerken',
-            'contact' => 'Contact',
+        ],
+        'tree_menu' => [
+            'aanplanten-van-bomen-of-leibomen' => 'Aanplanten van bomen of leibomen',
+            'advies' => 'Advies',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
-        'version' => 'v3.1',
+        'version' => 'v3.2',
     ];
 
     return isset($config[$key]) ? $config[$key] : null;
