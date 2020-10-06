@@ -23,6 +23,8 @@ function config($key = '')
             'boombescherming-op-werven' => 'Boombescherming op werven',
             'boomveiligheids-inspecties' => 'Boomveiligheids- inspecties',
             'storm-interventies' => 'Interventies voor, tijdens en na storm',
+            'inventarisatie-en-beheer-planning-van-boombestanden' => 'Inventarisatie en beheer planning van boombestanden',
+            'kroon-en-kluitverankering' => 'Kroon- en kluitverankering',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
