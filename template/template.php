@@ -149,7 +149,7 @@
 		<p>We gebruiken cookies om ervoor te zorgen dat u de beste ervaring op onze website krijgt. </p>
 
 		<div class="cookie__flex">
-			<a href="#">Lees meer</a>
+			<a href="<?php ('site_url'); ?>/privacyverklaring">Lees meer</a>
 			<button type="button" class="c-btn c-btn--accent-two cookie__accept">
 				Akkoord
 			</button>

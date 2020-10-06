@@ -20,6 +20,9 @@ function config($key = '')
         'tree_menu' => [
             'aanplanten-van-bomen-of-leibomen' => 'Aanplanten van bomen of leibomen',
             'advies' => 'Advies',
+            'boombescherming-op-werven' => 'Boombescherming op werven',
+            'boomveiligheids-inspecties' => 'Boomveiligheids- inspecties',
+            'storm-interventies' => 'Interventies voor, tijdens en na storm',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
