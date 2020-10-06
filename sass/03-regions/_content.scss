@@ -4,6 +4,10 @@
 
 .r-content {
 
+  @include mq(desktop) {
+    padding-left: 2rem;
+  }
+
   img {
     margin-bottom: $margin-b;
 

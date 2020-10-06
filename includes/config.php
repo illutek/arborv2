@@ -25,6 +25,7 @@ function config($key = '')
             'storm-interventies' => 'Interventies voor, tijdens en na storm',
             'inventarisatie-en-beheer-planning-van-boombestanden' => 'Inventarisatie en beheer planning van boombestanden',
             'kroon-en-kluitverankering' => 'Kroon- en kluitverankering',
+            'snoeien-van-bomen' => 'Snoeien van bomen',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
