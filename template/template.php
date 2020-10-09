@@ -135,6 +135,7 @@
         <div class="container r-footer__inner">
           <div class="r-footer__contact">
             <p>Joey Liberloo <br>Nijverheidsstraat 36<br>3583 Paal-Beringen</p>
+            <p>Contacteer ons</p>
             <a class="c-btn c-btn--accent" href="tel:+32491550999">+32491550999</a>
           </div>
       </footer>
