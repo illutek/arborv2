@@ -6,9 +6,18 @@
   background-color: map-get($colors, accent-two);
   padding: 2rem 0;
 
-  @include mq(desktop) {
-    background-color: transparent;
-    
+  @include mq(tablet) {
+    flex-shrink: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__contact {
@@ -17,8 +26,19 @@
     @include mq(desktop) {
       padding: 2rem;
       text-align: left;
-      border: 1px solid map-get($colors, accent-two);
     }
+  }
+
+  &__mail-link {
+    cursor: pointer;
+    margin-bottom: $margin-b;
+  }
+
+  &__fb {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__copy {
@@ -27,7 +47,7 @@
     padding: 1.5rem 3rem;
     font: {
       size: 1rem;
-    };
+    }
 
     @include mq(desktop) {
       border-top: none;

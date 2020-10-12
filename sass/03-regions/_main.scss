@@ -2,12 +2,17 @@
 // @@ REGION Main
 // //////////////////////////////
 
-// On desktop view the right region
+// On desktop this is the right part
 
 .r-main {
 
   @include mq(desktop) {
     grid-area: main;
     width: 50vw;
+    
+    @include mq(tablet) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

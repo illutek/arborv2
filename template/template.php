@@ -12,6 +12,9 @@
 
 <body>
 
+  <!-- facebook id -->
+  <div id="fb-root"></div>
+
   <div class="r-menu-overlay">
     <div class="r-menu-overlay__top">
       <div class="r-menu-overlay__close js-close-menu">
@@ -122,7 +125,8 @@
 
       </div><!-- end of r-header__branding -->
     </header>
-
+    
+    <!-- on desktop this is the right part -->
     <div class="r-main">
 
       <div class="r-content">
@@ -133,11 +137,28 @@
 
       <footer class="r-footer">
         <div class="container r-footer__inner">
+          <!-- Contact information -->
           <div class="r-footer__contact">
             <p>Joey Liberloo <br>Nijverheidsstraat 36<br>3583 Paal-Beringen</p>
-            <p>Contacteer ons</p>
+            <div class="r-footer__mail-link">
+              <a href="mailto: <?php echo strrev('moc.liamtoh@ecivres-robra'); ?> ">Contacteer ons</a>
+            </div>
+            
+
             <a class="c-btn c-btn--accent" href="tel:+32491550999">+32491550999</a>
           </div>
+
+          <!-- Facebook region  -->
+          <div class="r-footer__fb">
+            <div class="fb-page" data-href="https://www.facebook.com/arborservice" data-tabs="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+              <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/arborservice">
+                  <a href="https://www.facebook.com/arborservice">Arbor - service</a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
 
     </div><!-- end of r-main -->
