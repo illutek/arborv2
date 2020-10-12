@@ -34,13 +34,6 @@
     margin-bottom: $margin-b;
   }
 
-  &__fb {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   &__copy {
     background-color: map-get($colors, accent-two);
     border-top: 1px solid map-get($colors, white);
